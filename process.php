@@ -9,30 +9,28 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     echo "1 \n";
         if (!empty($_POST['username']) and !empty($_POST['password'])) {
         echo "2 \n";
-            //if (isset($_POST['register'])) {
+            if (isset($_POST['register'])) {
                 echo "yes register \n";
                 if (register($_POST['username'], $_POST['password'])) {
                     echo "register complet \n";
-                    header("location: register.php?s=1");
+                    header("location: userpanel");
                     exit;
                 } else {
                     echo "register not complet \n";
                     header("location: register.php?s=0");
                     exit;
                 }
-           // } elseif (isset($_POST['login'])) {
-           //     if (login($_POST['username'], $_POST['password'])) {
-           //         header("location: login.php?s=1");
-           //         exit;
-           //     } else {
-           //         header("location: login.php?s=0");
-           //         exit;
-           //     }
-           //}
+            } elseif (isset($_POST['login'])) {
+                if (login($_POST['username'], $_POST['password'])) {
+                    header("location: userpanel");
+                    exit;
+                } else {
+                    header("location: login.php?s=0");
+                    exit;
+                }
+           }
         }
     }
-}else{
-   echo "get method";
 }
 
 function isUserExists($username)
