@@ -85,7 +85,7 @@
         <form action="process.php" method="post">
             <input type="text" name="username" placeholder="آرنوآیدی">
             <input type="password" name="password" placeholder="رمز ورود">
-            <button type="submit" name=login"">ورود</button>
+            <button type="submit" name="login">ورود</button>
         </form>
     </div>
 </body>
