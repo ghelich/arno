@@ -1,13 +1,12 @@
 <?php
 
 $database_config = (object) [
-    'host'    => 'http://arnomaskan.ir/',
-    'user'    => 'arnoma',
-    'pass'    => '1q2w3e',
-    'dbname'  => 'arnoma_registration'
+    'host'    => '127.0.0.1',
+    'user'    => 'root',
+    'pass'    => '',
+    'dbname'  => 'aroma'
 ];
 try {
-echo "try to connection";
     $pdo = new PDO("mysql:host={$database_config->host};dbname={$database_config->dbname}", $database_config->user, $database_config->pass);
     $pdo->exec('set names utf8');
 
