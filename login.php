@@ -90,6 +90,6 @@
     </div>
 </body>
 <a href="https://arnomaskan.ir"> بازگشت به صفحه اصلی </a>
-<a href="register.php"> آیا ثبت نام نکرده اید؟ کلید کنید</a>
+<a href="https://arnomaskan.ir/register.php"> آیا ثبت نام نکرده اید؟ کلید کنید</a>
 
 </html>

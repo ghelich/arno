@@ -2,25 +2,18 @@
 session_start();
 
 include 'config.php';
-echo "this page \n";
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-    echo "yes \n";
     if (isset($_POST['username']) and isset($_POST['password'])) {
-    echo "1 \n";
         if (!empty($_POST['username']) and !empty($_POST['password'])) {
-        echo "2 \n";
             if (isset($_POST['register'])) {
-                echo "yes register \n";
                 if (register($_POST['username'], $_POST['password'])) {
-                    echo "register complet \n";
                     header("location: userpanel");
                     exit;
                 } else {
-                    echo "register not complet \n";
                     header("location: register.php?s=0");
                     exit;
                 }
-            } elseif (isset($_POST['login'])) {
+            } else if (isset($_POST['login'])) {
                 if (login($_POST['username'], $_POST['password'])) {
                     header("location: userpanel");
                     exit;
