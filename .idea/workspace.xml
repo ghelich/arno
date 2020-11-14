@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="c8d9dc4b-be20-49b4-8538-fed026ecab09" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP 7.1" />
+  <component name="ProjectId" id="1jQu5e0EBWNCXQYZucRVspsCb3B" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="PhpLocalRunConfigurationType" factoryName="PHP Console" path="$PROJECT_DIR$/config.php">
+      <CommandLine>
+        <PhpTestInterpreterSettings>
+          <option name="interpreterName" value="PHP 7.1" />
+        </PhpTestInterpreterSettings>
+      </CommandLine>
+      <method v="2" />
+    </configuration>
+    <configuration name="process.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" nameIsGenerated="true" path="$PROJECT_DIR$/process.php">
+      <CommandLine>
+        <PhpTestInterpreterSettings>
+          <option name="interpreterName" value="PHP 7.1" />
+        </PhpTestInterpreterSettings>
+      </CommandLine>
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c8d9dc4b-be20-49b4-8538-fed026ecab09" name="Default Changelist" comment="" />
+      <created>1603748456680</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1603748456680</updated>
+      <workItem from="1603748458660" duration="764000" />
+      <workItem from="1603749674395" duration="19000" />
+      <workItem from="1603750055056" duration="901000" />
+      <workItem from="1603751911745" duration="451000" />
+      <workItem from="1603791415633" duration="7821000" />
+      <workItem from="1605214458903" duration="7017000" />
+    </task>
+    <task id="LOCAL-00001" summary="frist commit">
+      <created>1603792335857</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1603792335857</updated>
+    </task>
+    <task id="LOCAL-00002" summary="fix syntax error">
+      <created>1603793900328</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1603793900328</updated>
+    </task>
+    <task id="LOCAL-00003" summary="set ip">
+      <created>1603839913551</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1603839913551</updated>
+    </task>
+    <task id="LOCAL-00004" summary="remove syntax error for login">
+      <created>1603839984780</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1603839984780</updated>
+    </task>
+    <task id="LOCAL-00005" summary="remove comment for logining">
+      <created>1603840040526</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1603840040526</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="frist commit" />
+    <MESSAGE value="fix syntax error" />
+    <MESSAGE value="set ip" />
+    <MESSAGE value="remove syntax error for login" />
+    <MESSAGE value="remove comment for logining" />
+    <option name="LAST_COMMIT_MESSAGE" value="remove comment for logining" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="315" y="62" key="#PHP" timestamp="1603752140897">
+      <screen x="0" y="23" width="1280" height="746" />
+    </state>
+    <state x="315" y="62" key="#PHP/0.23.1280.746@0.23.1280.746" timestamp="1603752140897" />
+    <state x="19" y="232" key="#SQL_Dialects" timestamp="1605313253830">
+      <screen x="0" y="23" width="1280" height="746" />
+    </state>
+    <state x="19" y="232" key="#SQL_Dialects/0.23.1280.746@0.23.1280.746" timestamp="1605313253830" />
+    <state x="227" y="58" key="#Servers" timestamp="1603748553409">
+      <screen x="0" y="23" width="1280" height="746" />
+    </state>
+    <state x="227" y="58" key="#Servers/0.23.1280.746@0.23.1280.746" timestamp="1603748553409" />
+    <state x="430" y="185" key="#Web_Browsers" timestamp="1604494212624">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state x="430" y="185" key="#Web_Browsers/0.0.1280.800@0.0.1280.800" timestamp="1604494212624" />
+    <state x="104" y="23" width="1071" height="746" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1605313922650">
+      <screen x="0" y="23" width="1280" height="746" />
+    </state>
+    <state x="104" y="23" width="1071" height="746" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1280.746@0.23.1280.746" timestamp="1605313922650" />
+    <state x="427" y="108" key="#com.intellij.ide.macro.MacrosDialog" timestamp="1603751987864">
+      <screen x="0" y="23" width="1280" height="746" />
+    </state>
+    <state x="427" y="108" key="#com.intellij.ide.macro.MacrosDialog/0.23.1280.746@0.23.1280.746" timestamp="1603751987864" />
+    <state x="234" y="0" key="CommitChangelistDialog2" timestamp="1603840040406">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state x="234" y="0" key="CommitChangelistDialog2/0.0.1280.800@0.0.1280.800" timestamp="1603840040406" />
+    <state x="234" y="23" key="CommitChangelistDialog2/0.23.1280.746@0.23.1280.746" timestamp="1603793900180" />
+    <state width="1238" height="110" key="GridCell.Tab.0.bottom" timestamp="1605313936198">
+      <screen x="0" y="23" width="1280" height="746" />
+    </state>
+    <state width="846" height="212" key="GridCell.Tab.0.bottom/0.0.1280.800@0.0.1280.800" timestamp="1604493817155" />
+    <state width="1238" height="110" key="GridCell.Tab.0.bottom/0.23.1280.746@0.23.1280.746" timestamp="1605313936198" />
+    <state width="1238" height="110" key="GridCell.Tab.0.center" timestamp="1605313936196">
+      <screen x="0" y="23" width="1280" height="746" />
+    </state>
+    <state width="846" height="212" key="GridCell.Tab.0.center/0.0.1280.800@0.0.1280.800" timestamp="1604493817153" />
+    <state width="1238" height="110" key="GridCell.Tab.0.center/0.23.1280.746@0.23.1280.746" timestamp="1605313936196" />
+    <state width="1238" height="110" key="GridCell.Tab.0.left" timestamp="1605313936195">
+      <screen x="0" y="23" width="1280" height="746" />
+    </state>
+    <state width="846" height="212" key="GridCell.Tab.0.left/0.0.1280.800@0.0.1280.800" timestamp="1604493817152" />
+    <state width="1238" height="110" key="GridCell.Tab.0.left/0.23.1280.746@0.23.1280.746" timestamp="1605313936195" />
+    <state width="1238" height="110" key="GridCell.Tab.0.right" timestamp="1605313936197">
+      <screen x="0" y="23" width="1280" height="746" />
+    </state>
+    <state width="846" height="212" key="GridCell.Tab.0.right/0.0.1280.800@0.0.1280.800" timestamp="1604493817154" />
+    <state width="1238" height="110" key="GridCell.Tab.0.right/0.23.1280.746@0.23.1280.746" timestamp="1605313936197" />
+    <state width="1238" height="110" key="GridCell.Tab.1.bottom" timestamp="1605313935943">
+      <screen x="0" y="23" width="1280" height="746" />
+    </state>
+    <state width="1238" height="110" key="GridCell.Tab.1.bottom/0.23.1280.746@0.23.1280.746" timestamp="1605313935943" />
+    <state width="1238" height="110" key="GridCell.Tab.1.center" timestamp="1605313935942">
+      <screen x="0" y="23" width="1280" height="746" />
+    </state>
+    <state width="1238" height="110" key="GridCell.Tab.1.center/0.23.1280.746@0.23.1280.746" timestamp="1605313935942" />
+    <state width="1238" height="110" key="GridCell.Tab.1.left" timestamp="1605313935941">
+      <screen x="0" y="23" width="1280" height="746" />
+    </state>
+    <state width="1238" height="110" key="GridCell.Tab.1.left/0.23.1280.746@0.23.1280.746" timestamp="1605313935941" />
+    <state width="1238" height="110" key="GridCell.Tab.1.right" timestamp="1605313935942">
+      <screen x="0" y="23" width="1280" height="746" />
+    </state>
+    <state width="1238" height="110" key="GridCell.Tab.1.right/0.23.1280.746@0.23.1280.746" timestamp="1605313935942" />
+    <state width="318" height="471" key="HiddenNamespacesPopup" timestamp="1603796344661">
+      <screen x="0" y="23" width="1280" height="746" />
+    </state>
+    <state width="318" height="471" key="HiddenNamespacesPopup/0.23.1280.746@0.23.1280.746" timestamp="1603796344661" />
+    <state x="149" y="32" key="SettingsEditor" timestamp="1603748985159">
+      <screen x="0" y="23" width="1280" height="746" />
+    </state>
+    <state x="149" y="32" key="SettingsEditor/0.23.1280.746@0.23.1280.746" timestamp="1603748985159" />
+    <state width="500" height="445" key="SwitcherDM" timestamp="1603749099454">
+      <screen x="0" y="23" width="1280" height="746" />
+    </state>
+    <state width="500" height="445" key="SwitcherDM/0.23.1280.746@0.23.1280.746" timestamp="1603749099454" />
+    <state x="240" y="121" key="Vcs.Push.Dialog.v2" timestamp="1603840073389">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state x="240" y="121" key="Vcs.Push.Dialog.v2/0.0.1280.800@0.0.1280.800" timestamp="1603840073389" />
+    <state x="240" y="136" key="Vcs.Push.Dialog.v2/0.23.1280.746@0.23.1280.746" timestamp="1603793902983" />
+    <state x="441" y="321" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1604526480276">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state x="441" y="321" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1280.800@0.0.1280.800" timestamp="1604526480276" />
+    <state x="0" y="23" key="com.jetbrains.php.config.phpInfo.PhpInfo.PhpInfoDialog" timestamp="1605313944773">
+      <screen x="0" y="23" width="1280" height="746" />
+    </state>
+    <state x="0" y="23" key="com.jetbrains.php.config.phpInfo.PhpInfo.PhpInfoDialog/0.23.1280.746@0.23.1280.746" timestamp="1605313944773" />
+    <state x="462" y="297" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1603793063239">
+      <screen x="0" y="23" width="1280" height="746" />
+    </state>
+    <state x="462" y="297" key="git4idea.remote.GitConfigureRemotesDialog/0.23.1280.746@0.23.1280.746" timestamp="1603793063239" />
+    <state width="600" height="428" key="javadoc.popup" timestamp="1605391538602">
+      <screen x="0" y="23" width="1280" height="746" />
+    </state>
+    <state width="600" height="428" key="javadoc.popup/0.23.1280.746@0.23.1280.746" timestamp="1605391538602" />
+    <state x="305" y="176" key="run.anything.popup" timestamp="1603748999407">
+      <screen x="0" y="23" width="1280" height="746" />
+    </state>
+    <state x="305" y="176" key="run.anything.popup/0.23.1280.746@0.23.1280.746" timestamp="1603748999407" />
+    <state x="305" y="93" width="670" height="676" key="search.everywhere.popup" timestamp="1603749112135">
+      <screen x="0" y="23" width="1280" height="746" />
+    </state>
+    <state x="305" y="93" width="670" height="676" key="search.everywhere.popup/0.23.1280.746@0.23.1280.746" timestamp="1603749112135" />
+  </component>
+</project>
