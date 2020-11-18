@@ -1,4 +1,7 @@
 <!DOCTYPE html>
+<?php
+session_start();
+?>
 <html lang="en">
 <head>
 	<meta charset="utf-8">
@@ -25,6 +28,7 @@
 		</nav>
 	</header>
     <!-- navigation -->
+
 <div class="header w3ls wow bounceInUp" data-wow-duration="1s" data-wow-delay="0s">
   <div class="container">
             <nav class="navbar navbar-default">
@@ -59,12 +63,20 @@
 						<!-- about -->
 						<div id="about" class="tab-pane fade in active">
 							<h3>پروفایل کاربری شما</h3>
-							<p><span><i class="fa fa-user-circle"></i><strong>   نام:<input type="text"  /></strong></span>   :نام و نام خانوادگی  <input type="text"  /></p>
-							<p><span><i class="fa fa-user-circle-o"></i><strong>نام کاربری :  <input type="text" value="" /> </strong></span>  </p>
-							<p><span><i class="fa fa-calendar"></i><strong>تاریخ تولد :  <input type="text" value="1/1/98" /></strong></span>  </p>
-							<p><span><i class="fa fa-envelope"></i><strong>پست الکترونیک : <input type="text" value="arnomsg@gmail.com" /></strong></span>  </p>
-							<p><span><i class="fa fa-map-marker"></i><strong>آدرس :<input type="text" value="ایران | کرج" /></strong></span> </p>
-							<p><span><i class="fa fa-phone"></i><strong>تلفن تماس : <input type="text" value="09120000000" /></strong></span> </p>
+                            <form action="../process.php" method="post">
+								<?php
+                                include '../config.php';
+								$result = isUserExists($_SESSION['userdetail']);
+                                echo ' <p><span>   نام:<input type="text" name="name" value='.getvalue($result,"name").' /> </span>   :نام و نام خانوادگی  <input type="text" name="family" value='.getvalue($result,"family").'  /> </span> </p>';
+								echo '<p><span><strong>نام کاربری :  <input type="text" name="username" value='.getvalue($result , "username").' /> </strong></span>  </p>';
+								echo '<p><span><i class="fa fa-calendar"></i><strong>تاریخ تولد :  <input type="text" name="BirthDate" value='.getvalue($result , "BirthDate").' /></strong></span>  </p>';
+								echo '<p><span><i class="fa fa-envelope"></i><strong>پست الکترونیک : <input type="text" name="email" value='.getvalue($result , "email").' /></strong></span>  </p>';
+								echo '<p><span><i class="fa fa-map-marker"></i><strong>آدرس :<input type="text" name="address" value='.getvalue($result , "address").' /></strong></span> </p>';
+								echo '<p><span><i class="fa fa-phone"></i><strong>تلفن تماس : <input type="text" name="tellephone" value='.getvalue($result , "tellephone").' /></strong></span> </p>';?>
+								<p><button type="submit" name="updateProfile">   ذخیره   </button></p>
+
+							</form>
+
 						</div>
 						<!-- adventures and blog -->
 						<div id="adventures" class="tab-pane fade">
@@ -212,3 +224,23 @@
 	<script src="js/bootstrap.min.js"></script>
 </body><!-- This template has been downloaded from Webrubik.com -->
 </html>
+<?php
+
+function isUserExists($username )
+{
+    global $pdo;
+    $sql = "SELECT * FROM users WHERE username = :username";
+    $stmt = $pdo->prepare($sql);
+    $stmt->execute([':username' => $username]);
+    //return $stmt->rowCount();
+    $result = $stmt->fetch(PDO::FETCH_ASSOC);
+    return ($result);
+
+}
+function getvalue($params , $param){
+    return $params[$param];
+}
+function phpAlert($msg) {
+    echo "<script type='text/javascript'>alert('$msg');</script>";
+}
+?>

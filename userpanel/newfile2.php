@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
 <head>
     <meta charset="utf-8">
     <title>undefined</title>
@@ -151,11 +150,31 @@
             top: 377px;
             width: 200px;
         }
+        .gwd-select-lpuh {
+            position: absolute;
+            width: 100px;
+            height: 24px;
+            left: 198px;
+            top: 401px;
+        }
+        .gwd-label-13bx {
+            position: absolute;
+            width: 100px;
+            height: 20px;
+            left: 313px;
+            top: 405px;
+        }
     </style>
 </head>
 
 <body class="htmlNoPages">
 <form action="../process.php"  method="post" class="gwd-form-d29l">
+
+    <?php session_start();
+        echo '<input name="id" id="myP" value= '.  $_SESSION['login'] . '/>';?>
+    <script>
+        document.getElementById("myP").style.visibility = "hidden";
+    </script>
     <label class="gwd-label-589q"> نوع مسکن،نوع معامله،متراژ و محله برای عنوان را وارد کنید </label>
     <label class="gwd-label-ovzw">توضیحات و امکانات آگهی را وارد کنید</label>
     <label class="gwd-label-113s">سال ساخت را وارد کنید</label>
@@ -171,7 +190,12 @@
     <input type="text" name="Price" class="gwd-input-19l7">
     <input type="text" name="phoneNumber" class="gwd-input-1nkn">
     <input type="file" class="gwd-button-9mrs" name="fileToUpload" >
-
+    <select id="select_1" name="type" class="gwd-select-lpuh" data-gwd-name="type">
+        <option value="1">اجاره</option>
+        <option value="2">رهن</option>
+        <option value="3" selected="">فروش</option>
+    </select>
+    <label id="label_1"  class="gwd-label-13bx">نوع</label>
     <button type="submit" class="gwd-button-iyho" name="newfile">ذخیره</button>
 </form>
 </body>

@@ -93,10 +93,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <!-- make -->
 </div>
 <!-- //make -->
-
 <div class="team agile all_pad">
 	<div class="container">
-		<h3 class="title">تمام فایل های رهن کرج:<span></span></h3>
+		<h3 class="title">تمام فایل های اجاره کرج:<span></span></h3>
 		<div class="team-grids">
 <html lang="en">
 <head>
@@ -111,22 +110,29 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 </head>
 <body>
 <div class="body-container">
- <!-- start box 3 -->
-  <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
-    <figure class="newsbox">
-      <div class="image"><img src="https://uupload.ir/files/hzth_3.jpg" alt="sample58"/></div>
-      <figcaption>
-        <h3>آپارتمان 65متری باغستان</h3>
-      </figcaption>
-        <div class="date"><span class="day">40.000.000</span><span class="month">تومان</span></div>
-      <footer>
-        <div class="views"><i class="fa fa-eye"></i>رهن</div>
-        <div class="love"><i class="fa fa-heart"></i>1399/04/24</div>
-        <div class="comments"><i class="fa fa-comment"></i>23:00</div>
-      </footer><a href="http://arnomaskan.ir/karaj/rahn/home1.html"></a>
-    </figure>
-  </div>
- <!-- end box 3 -->
+    <!-- start box 2 with hover -->
+    <?php
+    include '../config.php';
+    $stmt = all();
+    while ($row = $stmt->fetch(PDO::FETCH_ASSOC)){
+    echo '<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">';
+    echo '<figure class="newsbox hover">';
+    echo '<div class="image"><img src="https://uupload.ir/files/qkun_2.jpg" alt="sample68"/></div>';
+    echo '<figcaption>';
+    echo '<h3>'.$row['PropertyType'].'</h3>';
+    echo '</figcaption>';
+    echo '   <div class="date"><span class="day">'.$row['Price'].'تومان ودیعه</span><span class="month">'.$row['Price'].' تومان اجاره</span></div>';
+
+    echo ' <footer>';
+    echo '   <div class="views"><i class="fa fa-eye"></i>اجاره ای</div>';
+    echo '   <div class="love"><i class="fa fa-heart"></i>'.$row['Year'].'</div>';
+    echo '   <div class="comments"><i class="fa fa-comment"></i>16:30</div>';
+    echo ' </footer><a href="http://arnomaskan.ir/karaj/ejare/home1.html"></a>';
+    echo '</figure>';
+    echo '</div>';
+        }
+    ?>
+  <!-- end box 2 with hover -->
 
 </div>
 
@@ -184,3 +190,17 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 </body>
 <!--ترجمه شده توسط مرجع تخصصی برنامه نویسان-->
 </html>
+<?php
+
+function all( )
+{
+    global $pdo;
+    $sql = "SELECT * FROM file where type = 1";
+    $stmt = $pdo->prepare($sql);
+$stmt->execute();
+//return $stmt->rowCount();
+
+return ($stmt);
+
+}
+?>

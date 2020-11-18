@@ -112,21 +112,28 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <body>
 <div class="body-container">
   <!-- start box 1 -->
-  <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
-    <figure class="newsbox">
-      <div class="image"><img src="https://uupload.ir/files/tfr4_1.jpg" alt="sample69"/></div>
-      <figcaption>
-        <h3>آپارتمان 111متری گوهردشت</h3>
-      </figcaption>
-        <div class="date"><span class="day">1.800.000.000</span><span class="month">تومان</span></div>
-      <footer>
-        <div class="views"><i class="fa fa-eye"></i>فروشی</div>
-        <div class="love"><i class="fa fa-heart"></i>1399/04/20</div>
-        <div class="comments"><i class="fa fa-comment"></i>04:04</div>
-      </footer><a href="http://arnomaskan.ir/karaj/forosh/home1.html"></a>
-    </figure>
-  </div>
+    <?php
+    include '../config.php';
+    $stmt = all();
+     while ($row = $stmt->fetch(PDO::FETCH_ASSOC)){
+        echo '<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">';
+        echo ' <figure class="newsbox">';
+        echo '  <div class="image"><img src="https://uupload.ir/files/tfr4_1.jpg" alt="sample69"/></div>';
+        echo '   <figcaption>';
+        echo '     <h3>'.$row['PropertyType'].'</h3>';
+        echo '   </figcaption>';
+        echo '     <div class="date"><span class="day">'.$row['Price'].'</span><span class="month">تومان</span></div>';
+        echo '   <footer>';
+        echo '     <div class="views"><i class="fa fa-eye"></i>فروشی</div>';
+        echo '     <div class="love"><i class="fa fa-heart"></i>'.$row['Year'].'</div>';
+        echo '     <div class="comments"><i class="fa fa-comment"></i>04:04</div>';
+        echo '   </footer><a href="http://arnomaskan.ir/karaj/forosh/home1.html"></a>';
+        echo ' </figure>';
+        echo '</div>';
+    }
+  ?>
   <!-- end box 1 -->
+
 </div>
 
 	<!-- start javascript for sample box hover -->
@@ -183,3 +190,17 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 </body>
 <!--ترجمه شده توسط مرجع تخصصی برنامه نویسان-->
 </html>
+<?php
+
+function all( )
+{
+    global $pdo;
+    $sql = "SELECT * FROM file where type = 3";
+    $stmt = $pdo->prepare($sql);
+    $stmt->execute();
+    //return $stmt->rowCount();
+
+    return ($stmt);
+
+}
+?>
